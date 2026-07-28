@@ -33,6 +33,7 @@
             font-family: var(--font-body);
             line-height: 1.6;
             overflow-x: hidden;
+            width: 100%;
         }
 
         /* Typography */
@@ -135,9 +136,10 @@
         }
 
         .hero h1 {
-            font-size: clamp(2.5rem, 6vw, 4.2rem);
-            line-height: 1.05;
+            font-size: clamp(2.2rem, 5vw, 4rem);
+            line-height: 1.1;
             margin-bottom: 1.5rem;
+            word-wrap: break-word;
         }
 
         .hero h1 span {
@@ -203,7 +205,7 @@
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 1.5rem;
         }
 
@@ -261,13 +263,18 @@
         }
 
         .table-container {
+            width: 100%;
             overflow-x: auto;
+            border: 1px solid var(--border);
+            border-radius: 8px;
         }
 
         table {
             width: 100%;
+            min-width: 550px;
             border-collapse: collapse;
             text-align: left;
+            background: var(--bg-card);
         }
 
         th, td {
@@ -278,15 +285,15 @@
         th {
             font-family: var(--font-heading);
             text-transform: uppercase;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: var(--text-muted);
-            background-color: var(--bg-card);
+            background-color: #121212;
         }
 
         th.highlight, td.highlight {
             color: var(--amber);
             font-weight: 600;
-            background-color: rgba(255, 176, 59, 0.03);
+            background-color: rgba(255, 176, 59, 0.05);
         }
 
         td {
